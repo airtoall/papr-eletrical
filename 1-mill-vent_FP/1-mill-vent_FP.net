@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source C:\Users\dogma\Desktop\1-mill-vent_FP\1-mill-vent_FP.sch)
-    (date "14/05/2020 15:34:10")
-    (tool "Eeschema (5.1.4)-1")
+    (source C:\Users\dogma\OneDrive\Desktop\1-mill\1-mill-vent_FP\1-mill-vent_FP.sch)
+    (date "5/29/2020 4:45:23 PM")
+    (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -228,13 +228,13 @@
         (pin (num 2) (name 2) (type passive)))))
   (libraries
     (library (logical Connector_Generic)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector_Generic.lib"))
+      (uri D:/KiCad/kicad-symbols-master/Connector_Generic.lib))
     (library (logical Device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib"))
+      (uri D:/KiCad/kicad-symbols-master/Device.lib))
     (library (logical Diode)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Diode.lib"))
+      (uri D:/KiCad/kicad-symbols-master/Diode.lib))
     (library (logical Switch)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Switch.lib")))
+      (uri D:/KiCad/kicad-symbols-master/Switch.lib)))
   (nets
     (net (code 1) (name +5V)
       (node (ref D2) (pin 2))

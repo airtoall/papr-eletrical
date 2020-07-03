@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:1-mill-vent-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L 1-mill-vent-rescue:TSM2301ACX-Transistor_FET Q4
-U 1 1 5EA8C398
-P 5300 5900
-F 0 "Q4" V 5200 6000 50  0000 C CNN
-F 1 "TSM480p06" V 5551 5900 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-251-3_Vertical" H 5500 5825 50  0001 L CIN
-F 3 "https://www.taiwansemi.com/products/datasheet/TSM2301A_C15.pdf" H 5300 5900 50  0001 L CNN
-	1    5300 5900
-	0    1    -1   0   
-$EndComp
 $Comp
 L Transistor_BJT:2N3904 Q3
 U 1 1 5EA8D3C4
@@ -255,8 +243,6 @@ F 3 "~" H 4900 6900 50  0001 C CNN
 	1    4900 6900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4900 6650 4900 6800
 Connection ~ 4900 6650
 Wire Wire Line
 	4900 6650 5000 6650
@@ -288,7 +274,7 @@ U 1 1 5ED10447
 P 5650 6000
 F 0 "C6" H 5742 6046 50  0000 L CNN
 F 1 "0.1uF" H 5742 5955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 5650 6000 50  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5650 6000 50  0001 C CNN
 F 3 "~" H 5650 6000 50  0001 C CNN
 	1    5650 6000
 	1    0    0    -1  
@@ -305,7 +291,7 @@ U 1 1 5ED1A5CB
 P 9850 1150
 F 0 "C10" H 9942 1196 50  0000 L CNN
 F 1 "0.1uF" H 9942 1105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 9850 1150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 9850 1150 50  0001 C CNN
 F 3 "~" H 9850 1150 50  0001 C CNN
 	1    9850 1150
 	1    0    0    -1  
@@ -316,7 +302,7 @@ U 1 1 5ED2436F
 P 9250 1150
 F 0 "C9" H 9050 1200 50  0000 L CNN
 F 1 "0.1uF" H 8950 1100 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 9250 1150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 9250 1150 50  0001 C CNN
 F 3 "~" H 9250 1150 50  0001 C CNN
 	1    9250 1150
 	1    0    0    -1  
@@ -352,7 +338,7 @@ F 3 "" H 10550 1400 50  0001 C CNN
 $EndComp
 Connection ~ 9850 1350
 Text Notes 11750 4850 0    50   ~ 0
-Fan block:\nPin#4 RPM signal out from fan (Blue)\nPin#3 PWM Input to fan (Yellow)\nPin#2 Power +12V@1A (Red)\nPin#1 Gound (Black)
+Fan block:\nPin#4  PWM Input to fan (Yellow\nPin#3) RPM signal out from fan (Blue)\nPin#2 Power +12V@1A (Red)\nPin#1 Gound (Black)
 Text Notes 11750 6300 0    50   ~ 0
 Power Block:\nPin#1 20V Batt power (Red)\nPin#2 Return Batt  Power (Black)
 Text GLabel 8600 2150 0    50   Input ~ 0
@@ -375,73 +361,6 @@ Text GLabel 10400 2650 2    50   Input ~ 0
 Pressure_V
 Text GLabel 10400 2850 2    50   Input ~ 0
 Motor
-Text GLabel 3400 1000 0    50   Input ~ 0
-RPM
-$Comp
-L Device:R_Small_US R11
-U 1 1 5EC7C7AF
-P 3650 1000
-F 0 "R11" V 3750 1050 50  0000 R CNN
-F 1 "1k" V 3500 1050 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" H 3650 1000 50  0001 C CNN
-F 3 "~" H 3650 1000 50  0001 C CNN
-	1    3650 1000
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 5EC8D877
-P 4450 1200
-F 0 "C3" H 4542 1246 50  0000 L CNN
-F 1 "0.1uF" H 4542 1155 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 4450 1200 50  0001 C CNN
-F 3 "~" H 4450 1200 50  0001 C CNN
-	1    4450 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R13
-U 1 1 5EC8F81B
-P 4150 1000
-F 0 "R13" V 4350 1050 50  0000 R CNN
-F 1 "10k" V 4250 1050 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" H 4150 1000 50  0001 C CNN
-F 3 "~" H 4150 1000 50  0001 C CNN
-	1    4150 1000
-	0    1    -1   0   
-$EndComp
-Text GLabel 4650 1000 2    50   Input ~ 0
-RPM_V
-Wire Wire Line
-	3750 1000 3900 1000
-Wire Wire Line
-	4250 1000 4450 1000
-Connection ~ 3900 1000
-Wire Wire Line
-	3900 1000 4050 1000
-Connection ~ 4450 1000
-Wire Wire Line
-	4450 1000 4650 1000
-Wire Wire Line
-	3900 1400 4450 1400
-Wire Wire Line
-	4450 1400 4450 1300
-$Comp
-L power:GND #PWR06
-U 1 1 5ED05FD0
-P 3900 1550
-F 0 "#PWR06" H 3900 1300 50  0001 C CNN
-F 1 "GND" H 3905 1377 50  0000 C CNN
-F 2 "" H 3900 1550 50  0001 C CNN
-F 3 "" H 3900 1550 50  0001 C CNN
-	1    3900 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 1300 3900 1400
-Connection ~ 3900 1400
-Text GLabel 10400 2750 2    50   Input ~ 0
-RPM_V
 Text Notes 5850 5350 0    50   ~ 0
 1951-2612-ND
 Text Notes 4750 5600 0    50   ~ 0
@@ -486,7 +405,7 @@ U 1 1 5EEE9040
 P 10550 1150
 F 0 "C11" H 10642 1196 50  0000 L CNN
 F 1 "0.1uF" H 10642 1105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 10550 1150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 10550 1150 50  0001 C CNN
 F 3 "~" H 10550 1150 50  0001 C CNN
 	1    10550 1150
 	1    0    0    -1  
@@ -529,7 +448,7 @@ U 1 1 5F086DE2
 P 2700 3000
 F 0 "C1" H 2792 3046 50  0000 L CNN
 F 1 "0.1uF" H 2792 2955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 2700 3000 50  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 2700 3000 50  0001 C CNN
 F 3 "~" H 2700 3000 50  0001 C CNN
 	1    2700 3000
 	1    0    0    -1  
@@ -573,8 +492,8 @@ $Comp
 L Device:R_Small_US R7
 U 1 1 5F112568
 P 1950 3900
-F 0 "R7" H 2100 3800 50  0000 R CNN
-F 1 "10k" H 2100 4000 50  0000 R CNN
+F 0 "R7" H 2100 3850 50  0000 R CNN
+F 1 "5k" H 2100 3950 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" H 1950 3900 50  0001 C CNN
 F 3 "~" H 1950 3900 50  0001 C CNN
 	1    1950 3900
@@ -603,8 +522,6 @@ Wire Wire Line
 	4550 5450 4550 5800
 Text Notes 10100 2150 0    50   ~ 0
 Arduino Nano\n  V3 Board
-Wire Wire Line
-	3550 1000 3400 1000
 Wire Wire Line
 	8600 3050 9000 3050
 Wire Wire Line
@@ -857,41 +774,41 @@ Wire Wire Line
 Wire Wire Line
 	10200 5050 9850 5050
 Wire Wire Line
-	10200 5950 9850 5950
+	10200 5650 9850 5650
 Wire Wire Line
-	9850 5850 10200 5850
+	9850 5750 10200 5750
 Wire Wire Line
-	10200 5750 9850 5750
+	10200 5850 9850 5850
 Wire Wire Line
-	9850 5650 10200 5650
+	9850 5950 10200 5950
 $Comp
 L Connector:Conn_01x04_Male J7
 U 1 1 5ED938FE
-P 10400 5850
-F 0 "J7" H 10372 5732 50  0000 R CNN
-F 1 "EXT Power Option" H 10372 5823 50  0000 R CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 10400 5850 50  0001 C CNN
-F 3 "~" H 10400 5850 50  0001 C CNN
-	1    10400 5850
-	-1   0    0    1   
+P 10400 5750
+F 0 "J7" H 10372 5632 50  0000 R CNN
+F 1 "EXT Power Option" H 10372 5723 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 10400 5750 50  0001 C CNN
+F 3 "~" H 10400 5750 50  0001 C CNN
+	1    10400 5750
+	-1   0    0    -1  
 $EndComp
 Text GLabel 9850 5450 0    50   Input ~ 0
 GND
 Text GLabel 9850 5350 0    50   Input ~ 0
 Speed
-Text GLabel 9850 5950 0    50   Input ~ 0
-SW_Batt
-Text GLabel 9850 5850 0    50   Input ~ 0
-+12V
-Text GLabel 9850 5750 0    50   Input ~ 0
-+5V
 Text GLabel 9850 5650 0    50   Input ~ 0
+SW_Batt
+Text GLabel 9850 5750 0    50   Input ~ 0
++12V
+Text GLabel 9850 5850 0    50   Input ~ 0
++5V
+Text GLabel 9850 5950 0    50   Input ~ 0
 GND
 Text GLabel 9850 5050 0    50   Input ~ 0
 Motor-
 Text GLabel 9850 5150 0    50   Input ~ 0
 Motor+
-Text GLabel 9850 4550 0    50   Input ~ 0
+Text GLabel 9850 4350 0    50   Input ~ 0
 RPM
 $Comp
 L Connector:Conn_01x02_Male J8
@@ -917,43 +834,43 @@ L Device:Fuse_Small F1
 U 1 1 5EB0CE1F
 P 10050 6250
 F 0 "F1" H 10050 6435 50  0000 C CNN
-F 1 "3A FB" H 10050 6344 50  0000 C CNN
+F 1 "2A FB" H 10050 6344 50  0000 C CNN
 F 2 "Fuse:Fuse_Littelfuse_372_D8.50mm" H 10050 6250 50  0001 C CNN
 F 3 "~" H 10050 6250 50  0001 C CNN
 	1    10050 6250
 	-1   0    0    1   
 $EndComp
-Text GLabel 9850 4250 0    50   Input ~ 0
+Text GLabel 9850 4050 0    50   Input ~ 0
 +5V
 Wire Wire Line
-	10150 4300 10150 4250
+	10150 4100 10150 4050
 Wire Wire Line
-	10150 4550 10150 4500
+	10150 4350 10150 4300
 Wire Wire Line
-	9850 4650 10200 4650
+	9850 4550 10200 4550
 $Comp
 L Device:R_Small_US R28
 U 1 1 5EAEC32B
-P 10150 4400
-F 0 "R28" H 10082 4354 50  0000 R CNN
-F 1 "10k" H 10082 4445 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" H 10150 4400 50  0001 C CNN
-F 3 "~" H 10150 4400 50  0001 C CNN
-	1    10150 4400
+P 10150 4200
+F 0 "R28" H 10082 4154 50  0000 R CNN
+F 1 "10k" H 10082 4245 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" H 10150 4200 50  0001 C CNN
+F 3 "~" H 10150 4200 50  0001 C CNN
+	1    10150 4200
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small_US R27
 U 1 1 5EADFBAA
-P 10000 4550
-F 0 "R27" V 10205 4550 50  0000 C CNN
-F 1 "1k" V 10114 4550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" H 10000 4550 50  0001 C CNN
-F 3 "~" H 10000 4550 50  0001 C CNN
-	1    10000 4550
+P 10000 4350
+F 0 "R27" V 10205 4350 50  0000 C CNN
+F 1 "1k" V 10114 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" H 10000 4350 50  0001 C CNN
+F 3 "~" H 10000 4350 50  0001 C CNN
+	1    10000 4350
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9850 4650 0    50   Input ~ 0
+Text GLabel 9850 4550 0    50   Input ~ 0
 PWM
 Text GLabel 9850 4850 0    50   Input ~ 0
 GND
@@ -1044,14 +961,12 @@ Wire Wire Line
 Wire Wire Line
 	10200 6150 9850 6150
 Wire Wire Line
-	10100 4550 10150 4550
+	10100 4350 10150 4350
 Wire Wire Line
-	9850 4250 10150 4250
+	9850 4050 10150 4050
+Connection ~ 10150 4350
 Wire Wire Line
-	10150 4550 10200 4550
-Connection ~ 10150 4550
-Wire Wire Line
-	9850 4550 9900 4550
+	9850 4350 9900 4350
 Wire Wire Line
 	5450 3050 6250 3050
 Connection ~ 6250 2700
@@ -1093,9 +1008,8 @@ Wire Wire Line
 Connection ~ 1700 5850
 NoConn ~ 10000 3050
 NoConn ~ 10000 3150
-NoConn ~ 4200 7100
 NoConn ~ 1300 7300
-Text GLabel 7350 1150 2    50   Input ~ 0
+Text GLabel 5950 1050 0    50   Input ~ 0
 GND
 Text GLabel 1350 3250 0    50   Input ~ 0
 Pressure
@@ -1180,7 +1094,6 @@ Text GLabel 10400 2250 2    50   Input ~ 0
 REF
 Wire Wire Line
 	10000 2250 10400 2250
-NoConn ~ 9000 3150
 Wire Wire Line
 	4900 6400 6800 6400
 Wire Wire Line
@@ -1192,20 +1105,9 @@ U 1 1 5ED62525
 P 4600 4100
 F 0 "C4" H 4692 4146 50  0000 L CNN
 F 1 "10uF" H 4692 4055 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P12.50mm_Horizontal" H 4600 4100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 4600 4100 50  0001 C CNN
 F 3 "~" H 4600 4100 50  0001 C CNN
 	1    4600 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 5ED64121
-P 5600 4100
-F 0 "C5" H 5692 4146 50  0000 L CNN
-F 1 "1uF" H 5692 4055 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P12.50mm_Horizontal" H 5600 4100 50  0001 C CNN
-F 3 "~" H 5600 4100 50  0001 C CNN
-	1    5600 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1214,7 +1116,7 @@ U 1 1 5ED646C6
 P 5850 4100
 F 0 "C7" H 5942 4146 50  0000 L CNN
 F 1 "0.1uF" H 5942 4055 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 5850 4100 50  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5850 4100 50  0001 C CNN
 F 3 "~" H 5850 4100 50  0001 C CNN
 	1    5850 4100
 	1    0    0    -1  
@@ -1225,7 +1127,7 @@ U 1 1 5ED8FFD3
 P 7300 4000
 F 0 "C8" H 7392 4046 50  0000 L CNN
 F 1 "470pF" H 7392 3955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P12.50mm_Horizontal" H 7300 4000 50  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 7300 4000 50  0001 C CNN
 F 3 "~" H 7300 4000 50  0001 C CNN
 	1    7300 4000
 	1    0    0    -1  
@@ -1291,24 +1193,7 @@ F 3 "" H 5200 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 11750 6000 0    50   ~ 0
-Power Block:\nPin#1 Ground\nPin#2 +5V\nPin#3 +12V\nPin#4 Switched Battery Voltage
-$Comp
-L Device:C_Small C2
-U 1 1 5F07E901
-P 3900 1200
-F 0 "C2" H 3992 1246 50  0000 L CNN
-F 1 "0.1uF" H 3992 1155 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 3900 1200 50  0001 C CNN
-F 3 "~" H 3900 1200 50  0001 C CNN
-	1    3900 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 1000 3900 1100
-Wire Wire Line
-	4450 1000 4450 1100
-Wire Wire Line
-	3900 1400 3900 1550
+Power Block:       (MARKED BACKWARDS ON SILKSCREEN)\nPin#1 Switched Battery Voltage\nPin#2 +12V\nPin#3 +5V\nPin#4 Ground
 Wire Wire Line
 	6050 3850 5850 3850
 Connection ~ 5850 3850
@@ -1400,7 +1285,7 @@ Text GLabel 5950 1250 0    50   Input ~ 0
 LED6
 Text GLabel 5950 1150 0    50   Input ~ 0
 LED7
-Text GLabel 5950 1050 0    50   Input ~ 0
+Text GLabel 7350 1150 2    50   Input ~ 0
 Down
 $Comp
 L Device:R_Small_US R20
@@ -1539,4 +1424,41 @@ Wire Wire Line
 	6450 7150 6150 7150
 Wire Wire Line
 	5650 5150 5650 5450
+$Comp
+L Device:CP1_Small C5
+U 1 1 5EC0A0ED
+P 5600 4100
+F 0 "C5" H 5691 4146 50  0000 L CNN
+F 1 "1uF" H 5691 4055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_Tantal_D5.5mm_P2.50mm" H 5600 4100 50  0001 C CNN
+F 3 "~" H 5600 4100 50  0001 C CNN
+	1    5600 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 4350 10150 4650
+Wire Wire Line
+	10150 4650 10200 4650
+$Comp
+L 1-mill-vent-rescue:TSM480P06CHX0G-Transistor_FET Q4
+U 1 1 5ED03928
+P 5300 5900
+F 0 "Q4" V 5504 5946 50  0000 L CNN
+F 1 "TSM480P06CHX0G-Transistor_FET" V 4900 5200 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-251-3_Vertical" H 5500 5825 50  0001 L CIN
+F 3 "" H 5300 5900 50  0001 L CNN
+	1    5300 5900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4900 6650 4900 6800
+Text GLabel 8600 3150 0    50   Input ~ 0
+Power_off
+Wire Wire Line
+	9000 3150 8600 3150
+Text GLabel 4450 6650 0    50   Input ~ 0
+Power_off
+NoConn ~ 10400 2750
+Wire Wire Line
+	4450 6650 4900 6650
 $EndSCHEMATC
