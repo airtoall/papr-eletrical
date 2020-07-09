@@ -63,7 +63,7 @@ Wire Wire Line
 Connection ~ 13000 5500
 Wire Wire Line
 	13000 5500 13100 5500
-Text GLabel 12100 4800 0    50   Input ~ 0
+Text GLabel 12100 4800 0    50   Output ~ 0
 SW_Batt
 Text GLabel 14350 5500 2    50   Output ~ 0
 +12V
@@ -115,10 +115,10 @@ Wire Wire Line
 	13000 5800 13000 5900
 Wire Wire Line
 	13000 5900 13500 5900
-Text Notes 14550 1300 0    50   ~ 0
+Text Notes 14950 1500 0    50   ~ 0
 Fan block:\nPin#4  PWM Input to fan (Yellow\nPin#3) RPM signal out from fan (Blue)\nPin#2 Power +12V@1A (Red)\nPin#1 Gound (Black)
-Text Notes 15200 3400 0    50   ~ 0
-Power Block:\n\nPin#1 Ext 30V Batt power \nPin#2 Return Batt  Power\nPin#3 Int 30V Batt power 
+Text Notes 15450 2300 0    50   ~ 0
+Power Block:\n\nPin#1 Return Batt  Power\nPin#2 Int 30V Batt power 
 $Comp
 L Device:R_Small_US R16
 U 1 1 5EB4FFB9
@@ -245,41 +245,39 @@ F 3 "~" H 10150 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13900 1600 13550 1600
+	14300 1800 13950 1800
 Wire Wire Line
-	13900 1500 13550 1500
+	14300 1700 13950 1700
 Text GLabel 2050 1050 2    50   Output ~ 0
 RPM
-Text GLabel 13550 3350 0    50   Output ~ 0
+Text GLabel 13800 2250 0    50   Output ~ 0
 Raw_Batt
-Text GLabel 13750 3250 0    50   Input ~ 0
+Text GLabel 14000 2150 0    50   Input ~ 0
 GND
 $Comp
 L Device:Fuse_Small F1
 U 1 1 5EB0CE1F
-P 13950 3350
-F 0 "F1" H 14050 3450 50  0000 C CNN
-F 1 "SF-0603FP200F-2" H 13600 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13950 3350 50  0001 C CNN
-F 3 "~" H 13950 3350 50  0001 C CNN
-	1    13950 3350
+P 14200 2250
+F 0 "F1" H 14300 2350 50  0000 C CNN
+F 1 "SF-0603FP200F-2" H 13850 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 14200 2250 50  0001 C CNN
+F 3 "~" H 14200 2250 50  0001 C CNN
+	1    14200 2250
 	-1   0    0    1   
 $EndComp
-Text GLabel 13400 2400 0    50   Input ~ 0
-+5V
 Wire Wire Line
-	13850 700  13850 650 
+	14250 900  14250 850 
 Wire Wire Line
-	13550 1000 13900 1000
+	13950 1200 14300 1200
 $Comp
 L Device:R_Small_US R4
 U 1 1 5EAEC32B
-P 13850 800
-F 0 "R4" H 13800 800 50  0000 R CNN
-F 1 "10k" H 14050 800 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13850 800 50  0001 C CNN
-F 3 "~" H 13850 800 50  0001 C CNN
-	1    13850 800 
+P 14250 1000
+F 0 "R4" H 14200 1000 50  0000 R CNN
+F 1 "10k" H 14450 1000 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 14250 1000 50  0001 C CNN
+F 3 "~" H 14250 1000 50  0001 C CNN
+	1    14250 1000
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -295,19 +293,19 @@ F 3 "~" H 1400 1350 50  0001 C CNN
 $EndComp
 Text GLabel 2950 1350 0    50   Input ~ 0
 PWM
-Text GLabel 13550 1300 0    50   Input ~ 0
+Text GLabel 13950 1500 0    50   Input ~ 0
 GND
-Text GLabel 13550 1200 0    50   Input ~ 0
+Text GLabel 13950 1400 0    50   Input ~ 0
 +12V
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5EAD5B22
-P 14100 1200
-F 0 "J1" H 14072 1082 50  0000 R CNN
-F 1 "Fan" H 14072 1173 50  0000 R CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 14100 1200 50  0001 C CNN
-F 3 "~" H 14100 1200 50  0001 C CNN
-	1    14100 1200
+P 14500 1400
+F 0 "J1" H 14472 1282 50  0000 R CNN
+F 1 "Fan" H 14472 1373 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 14500 1400 50  0001 C CNN
+F 3 "~" H 14500 1400 50  0001 C CNN
+	1    14500 1400
 	-1   0    0    1   
 $EndComp
 Text GLabel 6100 1100 2    50   Output ~ 0
@@ -315,11 +313,9 @@ Buzzer-
 Wire Wire Line
 	6100 1100 5850 1100
 Wire Wire Line
-	13900 1200 13550 1200
+	14300 1400 13950 1400
 Wire Wire Line
-	13900 1300 13550 1300
-Wire Wire Line
-	13400 2400 13550 2400
+	14300 1500 13950 1500
 Wire Wire Line
 	10450 1650 11250 1650
 Connection ~ 11250 1300
@@ -342,9 +338,9 @@ F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5850 900 50  0001 C CNN
 	1    5850 900 
 	0    1    1    0   
 $EndComp
-Text Notes 12400 9550 0    50   ~ 0
+Text Notes 12350 9600 0    50   ~ 0
 For Software and Hardware Development Only!\nNot for Human Use!
-Text Notes 14550 1650 0    50   ~ 0
+Text Notes 14950 1850 0    50   ~ 0
 Buzzer:\nPin#2 Buzzer -\nPin#1 Buzzer +
 $Comp
 L power:PWR_FLAG #FLG01
@@ -369,7 +365,7 @@ F 3 "~" H 15300 6950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	13850 1100 13900 1100
+	14250 1300 14300 1300
 $Comp
 L 4-mill-vent-rescue:TSM480P06CHX0G-Transistor_FET-1-mill-vent-rescue-2-mill-vent-rescue-3-mill-vent-rescue Q5
 U 1 1 5ED03928
@@ -383,12 +379,12 @@ F 3 "" H 12650 5600 50  0001 L CNN
 $EndComp
 Wire Wire Line
 	12250 6350 12250 6500
-Text GLabel 13550 1500 0    50   Input ~ 0
+Text GLabel 13950 1700 0    50   Input ~ 0
 Buzzer-
-Text GLabel 13550 1100 0    50   Output ~ 0
+Text GLabel 13950 1300 0    50   Output ~ 0
 Raw_RPM
 Wire Wire Line
-	13550 1100 13850 1100
+	13950 1300 14250 1300
 Wire Wire Line
 	1550 1350 1500 1350
 Text GLabel 1200 1350 0    50   Input ~ 0
@@ -484,11 +480,11 @@ Wire Wire Line
 	3600 650  3600 750 
 Text GLabel 3800 650  2    50   Input ~ 0
 +12V
-Text GLabel 13550 1000 0    50   Input ~ 0
+Text GLabel 13950 1200 0    50   Input ~ 0
 PWM_Drive
-Connection ~ 13850 1100
+Connection ~ 14250 1300
 Wire Wire Line
-	13850 900  13850 1100
+	14250 1100 14250 1300
 $Comp
 L Device:C_Small C10
 U 1 1 5F2818C6
@@ -651,9 +647,9 @@ $EndComp
 Wire Wire Line
 	1350 3250 1350 3400
 Text GLabel 3500 4050 2    50   Input ~ 0
-Down
-Text GLabel 3500 3950 2    50   Input ~ 0
-Up
+Down+MOSO
+Text GLabel 3500 3950 2    50   Output ~ 0
+Timer_OC2A_MOSI
 $Comp
 L Device:C_Small C6
 U 1 1 5F897E37
@@ -762,8 +758,6 @@ Wire Wire Line
 	2000 7400 1900 7400
 Wire Wire Line
 	2500 7500 2650 7500
-Text GLabel 2650 7500 2    50   BiDi ~ 0
-Up
 Wire Wire Line
 	3500 4050 2700 4050
 Wire Wire Line
@@ -774,74 +768,32 @@ Text GLabel 1400 3650 0    50   Output ~ 0
 REF
 Wire Wire Line
 	1400 3650 1500 3650
-Wire Wire Line
-	3550 6000 3400 6000
-Text Label 3400 6000 2    50   ~ 0
-A5
-Wire Wire Line
-	3600 5650 3450 5650
-Wire Wire Line
-	3600 5850 3450 5850
-Wire Wire Line
-	3600 5550 3450 5550
-Wire Wire Line
-	3600 5450 3450 5450
-Wire Wire Line
-	3600 5350 3450 5350
-Wire Wire Line
-	3600 5250 3450 5250
-Wire Wire Line
-	3600 5150 3450 5150
-Wire Wire Line
-	3600 5050 3450 5050
-Text Label 3450 5650 2    50   ~ 0
-D10
-Text Label 3450 5850 2    50   ~ 0
-D9
-Text Label 3450 5550 2    50   ~ 0
-D8
-Text Label 3450 5450 2    50   ~ 0
-D7
-Text Label 3450 5350 2    50   ~ 0
-D6
-Text Label 3450 5250 2    50   ~ 0
-D5
-Text Label 3450 5150 2    50   ~ 0
-D4
-Text Label 3450 5050 2    50   ~ 0
-D3
-Wire Wire Line
-	3600 4850 3450 4850
-Text Label 3450 4850 2    50   ~ 0
-D2
-Text GLabel 3600 6300 2    50   Output ~ 0
+Text GLabel 4400 5650 2    50   Output ~ 0
 Motor
-Text GLabel 3550 6000 2    50   Input ~ 0
+Text GLabel 4000 3800 2    50   Input ~ 0
 Alarm
 Text GLabel 1300 3950 0    50   Input ~ 0
 Batt_V
-Text GLabel 3600 4850 2    50   Input ~ 0
+Text GLabel 3800 5650 2    50   Input ~ 0
 RPM
-Text GLabel 3600 5650 2    50   Input ~ 0
+Text GLabel 4650 5150 2    50   Input ~ 0
 LED7
-Text GLabel 3600 5850 2    50   Input ~ 0
+Text GLabel 3500 5900 2    50   Input ~ 0
 PWM
-Text GLabel 3600 5550 2    50   Input ~ 0
+Text GLabel 4650 5050 2    50   Input ~ 0
 LED6
-Text GLabel 3600 5450 2    50   Input ~ 0
+Text GLabel 4650 4950 2    50   Input ~ 0
 LED5
-Text GLabel 3600 5350 2    50   Input ~ 0
+Text GLabel 4650 4850 2    50   Input ~ 0
 Error
-Text GLabel 3600 5250 2    50   Input ~ 0
+Text GLabel 4650 4750 2    50   Input ~ 0
 LED3
-Text GLabel 3600 5150 2    50   Input ~ 0
+Text GLabel 4650 4650 2    50   Input ~ 0
 LED2
-Text GLabel 3600 5050 2    50   Input ~ 0
+Text GLabel 4650 4550 2    50   Input ~ 0
 LED1
 Wire Wire Line
 	2000 7500 1900 7500
-Text GLabel 1900 7400 0    50   BiDi ~ 0
-Down
 Wire Wire Line
 	1950 7800 2000 7800
 Wire Wire Line
@@ -913,10 +865,6 @@ Wire Wire Line
 	6100 4350 6100 4150
 Wire Wire Line
 	6200 4350 6200 4150
-Text GLabel 11450 6100 0    50   Output ~ 0
-Monitor
-Text GLabel 1900 7500 0    50   Output ~ 0
-Monitor
 $Comp
 L Transistor_BJT:PZT3904 Q4
 U 1 1 605C2FAE
@@ -972,7 +920,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3500 1350 50  000
 	1    3500 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 13550 1600 0    50   Input ~ 0
+Text GLabel 13950 1800 0    50   Input ~ 0
 SW_Batt
 $Comp
 L Amplifier_Operational:LM321 U1
@@ -1118,8 +1066,6 @@ Wire Wire Line
 Connection ~ 10100 4150
 Wire Wire Line
 	10100 4150 10100 4300
-Text GLabel 11350 3450 2    50   Output ~ 0
-Up
 $Comp
 L power:GND #PWR014
 U 1 1 5EE6CBE6
@@ -1133,8 +1079,6 @@ F 3 "" H 10100 4300 50  0001 C CNN
 $EndComp
 Text GLabel 9150 2950 0    50   Input ~ 0
 +5V
-Text GLabel 8450 3450 0    50   Output ~ 0
-Down
 Wire Wire Line
 	9450 3150 9450 2950
 Wire Wire Line
@@ -1363,30 +1307,30 @@ Batt Voltage Monitor\n30V in 4.5V out divided by 6.66\nfor 20V in the values are
 $Comp
 L Device:D_Zener D3
 U 1 1 602ACA98
-P 13650 3600
-F 0 "D3" V 13604 3680 50  0000 L CNN
-F 1 "833-3SMAJ5936B-TP" V 13600 2650 50  0000 L CNN
-F 2 "Diode_SMD:D_SMA" H 13650 3600 50  0001 C CNN
-F 3 "~" H 13650 3600 50  0001 C CNN
-	1    13650 3600
+P 13900 2500
+F 0 "D3" V 13854 2580 50  0000 L CNN
+F 1 "833-3SMAJ5936B-TP" V 13850 1550 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 13900 2500 50  0001 C CNN
+F 3 "~" H 13900 2500 50  0001 C CNN
+	1    13900 2500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	13550 3350 13650 3350
+	13800 2250 13900 2250
 Wire Wire Line
-	13650 3450 13650 3350
-Connection ~ 13650 3350
+	13900 2350 13900 2250
+Connection ~ 13900 2250
 Wire Wire Line
-	13650 3350 13850 3350
+	13900 2250 14100 2250
 $Comp
 L power:GND #PWR08
 U 1 1 60343C8A
-P 13650 3750
-F 0 "#PWR08" H 13650 3500 50  0001 C CNN
-F 1 "GND" H 13655 3577 50  0000 C CNN
-F 2 "" H 13650 3750 50  0001 C CNN
-F 3 "" H 13650 3750 50  0001 C CNN
-	1    13650 3750
+P 13900 2650
+F 0 "#PWR08" H 13900 2400 50  0001 C CNN
+F 1 "GND" H 13905 2477 50  0000 C CNN
+F 2 "" H 13900 2650 50  0001 C CNN
+F 3 "" H 13900 2650 50  0001 C CNN
+	1    13900 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1411,8 +1355,6 @@ Wire Wire Line
 Connection ~ 1350 3250
 Wire Wire Line
 	2700 3650 3500 3650
-Wire Wire Line
-	3500 3750 2700 3750
 $Comp
 L Device:R_Small_US R17
 U 1 1 5F048117
@@ -1491,12 +1433,12 @@ Connection ~ 11050 750
 Connection ~ 13000 4800
 Wire Wire Line
 	12100 4800 13000 4800
-Text GLabel 3350 6800 0    50   Input ~ 0
+Text GLabel 4950 5750 0    50   Input ~ 0
 Micro_power_Down
-Text GLabel 3550 6150 2    50   Output ~ 0
+Text GLabel 4350 5500 2    50   Output ~ 0
 Micro_power_Down
 Wire Wire Line
-	3550 6150 3400 6150
+	4350 5500 4200 5500
 Wire Wire Line
 	15850 6100 15750 6100
 Wire Wire Line
@@ -1606,47 +1548,14 @@ Wire Wire Line
 Wire Wire Line
 	8450 6300 8900 6300
 $Comp
-L Connector:Conn_01x03_Male J3
-U 1 1 5F2105ED
-P 14800 3250
-F 0 "J3" H 14772 3274 50  0000 R CNN
-F 1 "Power" H 14772 3183 50  0000 R CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 14800 3250 50  0001 C CNN
-F 3 "~" H 14800 3250 50  0001 C CNN
-	1    14800 3250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4003 D13
-U 1 1 5F2A5BD6
-P 14350 3150
-F 0 "D13" H 14350 3367 50  0000 C CNN
-F 1 "FM4004-W" H 14350 3276 50  0000 C CNN
-F 2 "Diode_SMD:D_SMB" H 14350 2975 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 14350 3150 50  0001 C CNN
-	1    14350 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14200 3150 14200 3350
-Wire Wire Line
-	14050 3350 14200 3350
-Wire Wire Line
-	14200 3350 14600 3350
-Connection ~ 14200 3350
-Wire Wire Line
-	13750 3250 13900 3250
-Wire Wire Line
-	14500 3150 14600 3150
-$Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5F3B9192
-P 14100 1500
-F 0 "J2" H 14072 1382 50  0000 R CNN
-F 1 "Buzzer" H 14072 1473 50  0000 R CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 14100 1500 50  0001 C CNN
-F 3 "~" H 14100 1500 50  0001 C CNN
-	1    14100 1500
+P 14500 1700
+F 0 "J2" H 14472 1582 50  0000 R CNN
+F 1 "Buzzer" H 14472 1673 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 14500 1700 50  0001 C CNN
+F 3 "~" H 14500 1700 50  0001 C CNN
+	1    14500 1700
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1720,64 +1629,10 @@ Wire Wire Line
 	11250 3450 11350 3450
 Wire Wire Line
 	8500 3450 8450 3450
-$Comp
-L Transistor_BJT:MMBT3904 Q7
-U 1 1 5F08F2A7
-P 14000 2800
-F 0 "Q7" H 14191 2846 50  0000 L CNN
-F 1 "MMBT3904" H 14191 2755 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 14200 2725 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 14000 2800 50  0001 L CNN
-	1    14000 2800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	13900 3000 13900 3250
-Connection ~ 13900 3250
-Wire Wire Line
-	13900 3250 14600 3250
-Text GLabel 13550 650  0    50   Input ~ 0
+Text GLabel 13950 850  0    50   Input ~ 0
 +5V
 Wire Wire Line
-	13550 650  13850 650 
-$Comp
-L Device:R_Small_US R24
-U 1 1 5F1309E6
-P 14400 2800
-F 0 "R24" V 14500 2950 50  0000 L CNN
-F 1 "100k" V 14500 2700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 14400 2800 50  0001 C CNN
-F 3 "~" H 14400 2800 50  0001 C CNN
-	1    14400 2800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	14600 3150 14600 2800
-Wire Wire Line
-	14600 2800 14500 2800
-Connection ~ 14600 3150
-Wire Wire Line
-	14300 2800 14200 2800
-$Comp
-L Device:R_Small_US R18
-U 1 1 5F174ABF
-P 13650 2400
-F 0 "R18" V 13550 2350 50  0000 L CNN
-F 1 "10k" V 13750 2300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 13650 2400 50  0001 C CNN
-F 3 "~" H 13650 2400 50  0001 C CNN
-	1    13650 2400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	13900 2400 13900 2600
-Wire Wire Line
-	13900 2600 13600 2600
-Connection ~ 13900 2600
-Text GLabel 13600 2600 0    50   Output ~ 0
-Ext_Power
-Wire Wire Line
-	13750 2400 13900 2400
+	13950 850  14250 850 
 Text Notes 4600 8200 0    50   ~ 0
 Micro_Power_Down is active low output from the Micro.\nLatching this line low will power down the unit.\n\nMonitor is active low input to the Micro.\nWhen low this signals the Micro the Power_Off button is depressed\nUp is debounced in hardware.\nDo Not USE Int Pull Up.\n\nExt_Power is active low input to the Micro.\nWhen low this tell the Micro that an Ext Batt is in use.\nDo Not USE Int Pull Up.\n\nUp is active low input to the Micro.\nWhen low this signals the Micro the Up button is depressed.\nUp is debounced in hardware.\nDo Not USE Int Pull Up.\n\nDown is active low input to the Micro.\nWhen low this signals the Micro the Down button is depressed.\nUp is debounced in hardware.\nDo Not USE Int Pull Up.\n\nRPM is an input to the Micro.\nWhen active, is a frequency directly related to fan speed\nthis should drive a counter.\nUp is debounced in hardware.\nDo Not USE Int Pull Up.
 Wire Wire Line
@@ -1803,7 +1658,7 @@ Wire Wire Line
 Connection ~ 12250 6100
 Connection ~ 11850 6100
 Wire Wire Line
-	3350 6800 3450 6800
+	4950 5750 5050 5750
 Wire Wire Line
 	12250 6850 11850 6850
 Wire Wire Line
@@ -1811,24 +1666,225 @@ Wire Wire Line
 $Comp
 L Diode:1N914 D14
 U 1 1 5F6CDB10
-P 3600 6800
-F 0 "D14" H 3750 6950 50  0000 L CNN
-F 1 "1N914" H 3645 6880 50  0000 L CNN
-F 2 "Diode_SMD:D_1206_3216Metric" H 3600 6625 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 3600 6800 50  0001 C CNN
-	1    3600 6800
+P 5200 5750
+F 0 "D14" H 5350 5900 50  0000 L CNN
+F 1 "1N914" H 5245 5830 50  0000 L CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 5200 5575 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 5200 5750 50  0001 C CNN
+	1    5200 5750
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	12250 6100 12250 6350
 Text GLabel 3500 4150 2    50   Input ~ 0
-Monitor
-Text GLabel 3900 6800 2    50   Input ~ 0
+Monitor_SCLK
+Text GLabel 5500 5750 2    50   Input ~ 0
 Monitor
 Wire Wire Line
-	3750 6800 3900 6800
+	5350 5750 5500 5750
 Wire Wire Line
 	12250 6100 13750 6100
 Wire Wire Line
 	11850 6100 11850 6150
+Text GLabel 8450 3450 0    50   Output ~ 0
+Down+MOSO
+Text GLabel 11350 3450 2    50   Output ~ 0
+Up
+Text GLabel 2650 7500 2    50   Output ~ 0
+Down+MOSO
+Text GLabel 1900 7400 0    50   Output ~ 0
+Timer_OC2A_MOSI
+Text GLabel 1900 7500 0    50   Input ~ 0
+Monitor_SCLK
+Text GLabel 11450 6100 0    50   Output ~ 0
+Monitor_SCLK
+Text GLabel 10950 7350 0    50   Output ~ 0
+Charger+
+Text GLabel 10950 7550 0    50   Output ~ 0
+Charger-
+Wire Wire Line
+	10050 8000 10200 8000
+$Comp
+L Connector:Conn_01x03_Female J7
+U 1 1 5FB51BF2
+P 9850 8100
+F 0 "J7" H 9742 7775 50  0000 C CNN
+F 1 "Safety connector" H 9742 7866 50  0000 C CNN
+F 2 "" H 9850 8100 50  0001 C CNN
+F 3 "~" H 9850 8100 50  0001 C CNN
+	1    9850 8100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J9
+U 1 1 5FB5407E
+P 9850 8750
+F 0 "J9" H 9742 8425 50  0000 C CNN
+F 1 "Ext batt connector" H 9742 8516 50  0000 C CNN
+F 2 "" H 9850 8750 50  0001 C CNN
+F 3 "~" H 9850 8750 50  0001 C CNN
+	1    9850 8750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J5
+U 1 1 5FB55629
+P 9850 7450
+F 0 "J5" H 9742 7125 50  0000 C CNN
+F 1 "Charger connector" H 9742 7216 50  0000 C CNN
+F 2 "" H 9850 7450 50  0001 C CNN
+F 3 "~" H 9850 7450 50  0001 C CNN
+	1    9850 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J6
+U 1 1 5FB6DA5B
+P 9200 8100
+F 0 "J6" H 9172 8032 50  0000 R CNN
+F 1 "Ext connector" H 9172 8123 50  0000 R CNN
+F 2 "" H 9200 8100 50  0001 C CNN
+F 3 "~" H 9200 8100 50  0001 C CNN
+	1    9200 8100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10200 8000 10200 8100
+Wire Wire Line
+	10200 8100 10050 8100
+Wire Wire Line
+	14300 2250 14850 2250
+Wire Wire Line
+	14000 2150 14850 2150
+NoConn ~ 10050 7450
+NoConn ~ 10050 8200
+NoConn ~ 10050 8650
+Wire Wire Line
+	9000 8200 8650 8200
+Wire Wire Line
+	8650 8200 8650 8700
+Wire Wire Line
+	9000 8100 8400 8100
+Wire Wire Line
+	8400 8100 8400 8700
+Wire Wire Line
+	9000 8000 8000 8000
+Connection ~ 8650 8200
+$Comp
+L Device:Battery BT1
+U 1 1 5FD56D9F
+P 10900 8800
+F 0 "BT1" H 11008 8846 50  0000 L CNN
+F 1 "Battery" H 11008 8755 50  0000 L CNN
+F 2 "" V 10900 8860 50  0001 C CNN
+F 3 "~" V 10900 8860 50  0001 C CNN
+	1    10900 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT2
+U 1 1 5FD5BA44
+P 8550 9000
+F 0 "BT2" H 8658 9046 50  0000 L CNN
+F 1 "Battery" H 8658 8955 50  0000 L CNN
+F 2 "" V 8550 9060 50  0001 C CNN
+F 3 "~" V 8550 9060 50  0001 C CNN
+	1    8550 9000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10600 8750 10600 8450
+Wire Wire Line
+	10600 8450 10900 8450
+Wire Wire Line
+	10900 8450 10900 8600
+Wire Wire Line
+	10600 8850 10600 9150
+Wire Wire Line
+	10600 9150 10900 9150
+Wire Wire Line
+	10900 9150 10900 9000
+Wire Wire Line
+	8650 8700 8900 8700
+Wire Wire Line
+	8900 8700 8900 9000
+Wire Wire Line
+	8900 9000 8750 9000
+Wire Wire Line
+	8400 8700 8150 8700
+Wire Wire Line
+	8150 8700 8150 9000
+Wire Wire Line
+	8150 9000 8350 9000
+Wire Wire Line
+	10050 8750 10600 8750
+Wire Wire Line
+	10050 8850 10600 8850
+Wire Wire Line
+	10050 7350 10550 7350
+Wire Wire Line
+	10050 7550 10550 7550
+$Comp
+L Connector:Conn_01x02_Female J8
+U 1 1 5FE00BF7
+P 7600 8200
+F 0 "J8" H 7492 7875 50  0000 C CNN
+F 1 "Power connector" H 7492 7966 50  0000 C CNN
+F 2 "" H 7600 8200 50  0001 C CNN
+F 3 "~" H 7600 8200 50  0001 C CNN
+	1    7600 8200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 8200 8650 8200
+Wire Wire Line
+	7800 8100 8000 8100
+Wire Wire Line
+	8000 8100 8000 8000
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5FE8672D
+P 15050 2150
+F 0 "J3" H 15022 2032 50  0000 R CNN
+F 1 "POWER_CONNECTOR" H 15022 2123 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 15050 2150 50  0001 C CNN
+F 3 "~" H 15050 2150 50  0001 C CNN
+	1    15050 2150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5850 3000 5850
+Wire Wire Line
+	3000 5950 2700 5950
+Wire Wire Line
+	2700 5650 3000 5650
+Text GLabel 3000 5650 2    50   Output ~ 0
+Timer_OC2B
+Text GLabel 3000 5850 2    50   Output ~ 0
+Timer_OC0B
+Text GLabel 3000 5950 2    50   Output ~ 0
+Timer_OC0A
+Text GLabel 3500 3750 2    50   Output ~ 0
+Timer_OC1A
+Wire Wire Line
+	2700 3750 3500 3750
+Text GLabel 3500 3850 2    50   Output ~ 0
+Timer_OC1B
+Wire Wire Line
+	2700 3850 3500 3850
+Text GLabel 3650 5350 0    50   Output ~ 0
+Up
+Wire Wire Line
+	3550 5650 3650 5650
+Wire Wire Line
+	3650 4600 4350 4600
+Wire Wire Line
+	4350 4600 4350 3950
+Wire Wire Line
+	4350 3950 4250 3950
+Wire Wire Line
+	3650 4600 3650 5650
+Connection ~ 3650 5650
+Wire Wire Line
+	3650 5650 3750 5650
 $EndSCHEMATC
