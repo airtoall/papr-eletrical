@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -116,7 +116,7 @@ L Device:R_Small_US R9
 U 1 1 5EBBAB1B
 P 9250 1300
 F 0 "R9" H 9318 1346 50  0000 L CNN
-F 1 "RN73H2BTTD7061B10" H 8400 1350 50  0000 L CNN
+F 1 "RN73H2BTTD8061F50" H 8400 1350 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" H 9250 1300 50  0001 C CNN
 F 3 "~" H 9250 1300 50  0001 C CNN
 	1    9250 1300
@@ -127,7 +127,7 @@ L Device:R_Small_US R5
 U 1 1 5EBB7348
 P 9250 900
 F 0 "R5" H 9318 946 50  0000 L CNN
-F 1 "RN73H2BTTD4702B10" H 8400 950 50  0000 L CNN
+F 1 "RN73H2BTTD4322F100" H 8400 950 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" H 9250 900 50  0001 C CNN
 F 3 "~" H 9250 900 50  0001 C CNN
 	1    9250 900 
@@ -389,10 +389,6 @@ F 3 "" H 1900 6950 50  0001 C CNN
 	1    1900 6950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 3800 2000 3700
-Wire Wire Line
-	1900 3700 1900 3800
 Text GLabel 2250 3700 2    50   Input ~ 0
 +5V
 $Comp
@@ -408,14 +404,9 @@ F 3 "~" H 1550 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1450 3700 1150 3700
-Wire Wire Line
-	2250 3700 2000 3700
 Connection ~ 1900 3700
 Wire Wire Line
 	1900 3700 1650 3700
-Connection ~ 2000 3700
-Wire Wire Line
-	2000 3700 1900 3700
 $Comp
 L power:GND #PWR09
 U 1 1 5F85C1DA
@@ -430,9 +421,9 @@ $EndComp
 Wire Wire Line
 	1150 3700 1150 3850
 Text GLabel 3300 4500 2    50   Input ~ 0
-Down+MOSO
+MOSO
 Text GLabel 3300 4400 2    50   Output ~ 0
-Timer_OC2A_MOSI
+MOSI
 $Comp
 L Device:C_Small C6
 U 1 1 5F897E37
@@ -501,84 +492,80 @@ Text GLabel 2700 5600 2    50   Input ~ 0
 Reset
 Wire Wire Line
 	2700 5600 2500 5600
-Text GLabel 7450 5300 0    50   Input ~ 0
+Text GLabel 6600 5700 0    50   Input ~ 0
 +5V
 $Comp
 L Device:R_Small_US R21
 U 1 1 5F96706C
-P 7600 5300
-F 0 "R21" V 7500 5250 50  0000 L CNN
-F 1 "10k" V 7700 5250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7600 5300 50  0001 C CNN
-F 3 "~" H 7600 5300 50  0001 C CNN
-	1    7600 5300
+P 6750 5700
+F 0 "R21" V 6650 5650 50  0000 L CNN
+F 1 "10k" V 6850 5650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6750 5700 50  0001 C CNN
+F 3 "~" H 6750 5700 50  0001 C CNN
+	1    6750 5700
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J4
 U 1 1 5FA18284
-P 7950 5000
-F 0 "J4" H 8000 4800 50  0000 C CNN
-F 1 "ICSP" H 8000 5226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 7950 5000 50  0001 C CNN
-F 3 "~" H 7950 5000 50  0001 C CNN
-	1    7950 5000
+P 7100 5400
+F 0 "J4" H 7150 5200 50  0000 C CNN
+F 1 "ICSP" H 7150 5626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 7100 5400 50  0001 C CNN
+F 3 "~" H 7100 5400 50  0001 C CNN
+	1    7100 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 7650 5100 0    50   Output ~ 0
+Text GLabel 6800 5500 0    50   Output ~ 0
 Reset
 Wire Wire Line
-	7750 5100 7650 5100
-Text GLabel 8400 5100 2    50   Output ~ 0
+	6900 5500 6800 5500
+Text GLabel 7550 5500 2    50   Output ~ 0
 GND
 Wire Wire Line
-	8400 5100 8250 5100
-Text GLabel 8400 4900 2    50   Output ~ 0
+	7550 5500 7400 5500
+Text GLabel 7550 5300 2    50   Output ~ 0
 +5V
 Wire Wire Line
-	8400 4900 8250 4900
+	7550 5300 7400 5300
 Wire Wire Line
-	7750 4900 7650 4900
+	6900 5300 6800 5300
 Wire Wire Line
-	8250 5000 8400 5000
+	7400 5400 7550 5400
 Wire Wire Line
 	3300 4500 2500 4500
 Wire Wire Line
 	3300 4400 2500 4400
-Text GLabel 1200 4100 0    50   Output ~ 0
-REF
-Wire Wire Line
-	1200 4100 1300 4100
-Text GLabel 4700 5500 2    50   Output ~ 0
+Text GLabel 3550 6000 2    50   Output ~ 0
 Motor
-Text GLabel 3800 4250 2    50   Input ~ 0
+Text GLabel 3550 5900 2    50   Input ~ 0
 Alarm
 Text GLabel 1100 4400 0    50   Input ~ 0
 Batt_V
-Text GLabel 3600 6100 2    50   Input ~ 0
+Text GLabel 3550 6100 2    50   Input ~ 0
 RPM
-Text GLabel 4500 5350 2    50   Output ~ 0
+Text GLabel 3550 5800 2    50   Output ~ 0
 LED7
-Text GLabel 3400 6350 2    50   Output ~ 0
+Text GLabel 3550 6300 2    50   Output ~ 0
 PWM
-Text GLabel 4500 5250 2    50   Output ~ 0
+Text GLabel 3550 5500 2    50   Output ~ 0
 LED6
-Text GLabel 4500 5150 2    50   Output ~ 0
+Text GLabel 3550 5400 2    50   Output ~ 0
 LED5
-Text GLabel 4500 5050 2    50   Output ~ 0
+Text GLabel 3550 5300 2    50   Output ~ 0
 LED4
-Text GLabel 4500 4950 2    50   Output ~ 0
+Text GLabel 3550 5200 2    50   Output ~ 0
 LED3
-Text GLabel 4500 4850 2    50   Output ~ 0
+Text GLabel 3550 5100 2    50   Output ~ 0
 LED2
-Text GLabel 4500 4750 2    50   Output ~ 0
+Text GLabel 3550 5000 2    50   Output ~ 0
 LED1
 Wire Wire Line
-	7750 5000 7650 5000
+	6900 5400 6800 5400
 Wire Wire Line
-	7700 5300 7750 5300
+	6850 5700 6900 5700
 Wire Wire Line
-	7450 5300 7500 5300
+	6600 5700 6650 5700
 $Comp
 L Device:R_Small_US R6
 U 1 1 60121CAE
@@ -988,7 +975,7 @@ Connection ~ 13300 7500
 Wire Wire Line
 	13300 7500 13300 7600
 Text Notes 9450 2250 0    50   ~ 0
-Batt Voltage Monitor\n30V in 4.5V out divided by 6.66\nfor 20V in the values are 33k and 8.2k for divide by 4\nThe input is clamped at 30v Max, over this the fuse will blow
+Batt Voltage Monitor\nfor 24v the values are 43.2k (R5) and 8.06k (R9) for divide by 5\nfor 20V the values are 33k and 8.2k for divide by 4\nThe input is clamped at 30v Max, over this the fuse will blow
 $Comp
 L Device:D_Zener D3
 U 1 1 602ACA98
@@ -1038,8 +1025,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 3400 1150 3700
 Connection ~ 1150 3700
-Wire Wire Line
-	2500 4100 3300 4100
 NoConn ~ 1300 4300
 Text GLabel 10550 650  2    50   Input ~ 0
 +12V
@@ -1102,11 +1087,11 @@ Wire Wire Line
 Connection ~ 10150 650 
 Text GLabel 10950 5000 0    50   Input ~ 0
 Micro_power_Down
-Text GLabel 4700 5650 2    50   Output ~ 0
+Text GLabel 3550 6500 2    50   Output ~ 0
 Micro_power_Down
 Wire Wire Line
-	7750 5100 7750 5300
-Connection ~ 7750 5100
+	6900 5500 6900 5700
+Connection ~ 6900 5500
 $Comp
 L Device:C_Small C11
 U 1 1 5F03EADF
@@ -1288,152 +1273,23 @@ Micro_Power_Down is active low output from the Micro.\nLatching this line low wi
 Wire Wire Line
 	2850 1350 2800 1350
 Text GLabel 3300 4600 2    50   Input ~ 0
-Monitor_SCLK
-Text GLabel 12150 5400 0    50   Output ~ 0
+SCLK
+Text GLabel 12300 5400 0    50   Output ~ 0
 Monitor
 Text GLabel 12300 7500 0    50   Output ~ 0
-Down+MOSO
+Down
 Text GLabel 15200 7500 2    50   Output ~ 0
 Up
-Text GLabel 8400 5000 2    50   Output ~ 0
-Down+MOSO
-Text GLabel 7650 4900 0    50   Output ~ 0
-Timer_OC2A_MOSI
-Text GLabel 7650 5000 0    50   Input ~ 0
-Monitor_SCLK
-Text GLabel 9650 6050 0    50   Output ~ 0
-Charger+
-Text GLabel 9650 6250 0    50   Output ~ 0
-Charger-
-Wire Wire Line
-	8750 6700 8900 6700
-$Comp
-L Connector:Conn_01x03_Female J7
-U 1 1 5FB51BF2
-P 8550 6800
-F 0 "J7" H 8442 6475 50  0000 C CNN
-F 1 "Safety connector" H 8442 6566 50  0000 C CNN
-F 2 "" H 8550 6800 50  0001 C CNN
-F 3 "~" H 8550 6800 50  0001 C CNN
-	1    8550 6800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x03_Female J9
-U 1 1 5FB5407E
-P 8550 7450
-F 0 "J9" H 8442 7125 50  0000 C CNN
-F 1 "Ext batt connector" H 8442 7216 50  0000 C CNN
-F 2 "" H 8550 7450 50  0001 C CNN
-F 3 "~" H 8550 7450 50  0001 C CNN
-	1    8550 7450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x03_Female J5
-U 1 1 5FB55629
-P 8550 6150
-F 0 "J5" H 8442 5825 50  0000 C CNN
-F 1 "Charger connector" H 8442 5916 50  0000 C CNN
-F 2 "" H 8550 6150 50  0001 C CNN
-F 3 "~" H 8550 6150 50  0001 C CNN
-	1    8550 6150
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J6
-U 1 1 5FB6DA5B
-P 7900 6800
-F 0 "J6" H 7872 6732 50  0000 R CNN
-F 1 "Ext connector" H 7872 6823 50  0000 R CNN
-F 2 "" H 7900 6800 50  0001 C CNN
-F 3 "~" H 7900 6800 50  0001 C CNN
-	1    7900 6800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8900 6700 8900 6800
-Wire Wire Line
-	8900 6800 8750 6800
+Text GLabel 7550 5400 2    50   Output ~ 0
+MOSO
+Text GLabel 6800 5300 0    50   Output ~ 0
+MOSI
+Text GLabel 6800 5400 0    50   Input ~ 0
+SCLK
 Wire Wire Line
 	13600 2300 14150 2300
 Wire Wire Line
 	13300 2200 14150 2200
-NoConn ~ 8750 6150
-NoConn ~ 8750 6900
-NoConn ~ 8750 7350
-Wire Wire Line
-	7700 6900 7350 6900
-Wire Wire Line
-	7350 6900 7350 7400
-Connection ~ 7350 6900
-$Comp
-L Device:Battery BT1
-U 1 1 5FD56D9F
-P 9600 7500
-F 0 "BT1" H 9708 7546 50  0000 L CNN
-F 1 "Battery" H 9708 7455 50  0000 L CNN
-F 2 "" V 9600 7560 50  0001 C CNN
-F 3 "~" V 9600 7560 50  0001 C CNN
-	1    9600 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Battery BT2
-U 1 1 5FD5BA44
-P 7250 7700
-F 0 "BT2" H 7358 7746 50  0000 L CNN
-F 1 "Battery" H 7358 7655 50  0000 L CNN
-F 2 "" V 7250 7760 50  0001 C CNN
-F 3 "~" V 7250 7760 50  0001 C CNN
-	1    7250 7700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9300 7450 9300 7150
-Wire Wire Line
-	9300 7150 9600 7150
-Wire Wire Line
-	9600 7150 9600 7300
-Wire Wire Line
-	9300 7550 9300 7850
-Wire Wire Line
-	9300 7850 9600 7850
-Wire Wire Line
-	9600 7850 9600 7700
-Wire Wire Line
-	7350 7400 7600 7400
-Wire Wire Line
-	7600 7400 7600 7700
-Wire Wire Line
-	7600 7700 7450 7700
-Wire Wire Line
-	7100 7400 6850 7400
-Wire Wire Line
-	6850 7400 6850 7700
-Wire Wire Line
-	6850 7700 7050 7700
-Wire Wire Line
-	8750 7450 9300 7450
-Wire Wire Line
-	8750 7550 9300 7550
-Wire Wire Line
-	8750 6050 9250 6050
-Wire Wire Line
-	8750 6250 9250 6250
-$Comp
-L Connector:Conn_01x02_Female J8
-U 1 1 5FE00BF7
-P 6300 6900
-F 0 "J8" H 6192 6575 50  0000 C CNN
-F 1 "Power connector" H 6192 6666 50  0000 C CNN
-F 2 "" H 6300 6900 50  0001 C CNN
-F 3 "~" H 6300 6900 50  0001 C CNN
-	1    6300 6900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6500 6900 7350 6900
 $Comp
 L Connector:Conn_01x02_Male J3
 U 1 1 5FE8672D
@@ -1445,54 +1301,15 @@ F 3 "~" H 14350 2200 50  0001 C CNN
 	1    14350 2200
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 6300 2800 6300
-Wire Wire Line
-	2800 6400 2500 6400
-Wire Wire Line
-	2500 6100 2800 6100
-Text GLabel 2800 6100 2    50   Output ~ 0
-Timer_OC2B
-Text GLabel 2800 6300 2    50   Output ~ 0
-Timer_OC0B
-Text GLabel 2800 6400 2    50   Output ~ 0
-Timer_OC0A
-Text GLabel 3300 4200 2    50   Output ~ 0
-Timer_OC1A
-Wire Wire Line
-	2500 4200 3300 4200
-Text GLabel 3300 4300 2    50   Output ~ 0
-Timer_OC1B
-Wire Wire Line
-	2500 4300 3300 4300
-Text GLabel 4450 5950 2    50   Input ~ 0
+Text GLabel 3300 4300 2    50   Input ~ 0
 Up
-Wire Wire Line
-	3350 6100 3450 6100
-Wire Wire Line
-	4150 4400 4050 4400
-Wire Wire Line
-	3450 5050 3450 6100
-Connection ~ 3450 6100
-Wire Wire Line
-	3450 6100 3550 6100
-Wire Wire Line
-	7100 6700 7700 6700
-Wire Wire Line
-	7100 6700 7100 7400
-Wire Wire Line
-	6500 6800 7700 6800
-Text Notes 9200 8000 0    50   ~ 0
-6 Cell LiPo
-Text Notes 7000 7900 0    50   ~ 0
-6 Cell LiPo
 $Comp
 L Connector:Conn_01x03_Male J2
 U 1 1 5F148B35
 P 14400 1800
 F 0 "J2" H 14372 1824 50  0000 R CNN
 F 1 "Buzzer" H 14372 1733 50  0000 R CNN
-F 2 "" H 14400 1800 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 14400 1800 50  0001 C CNN
 F 3 "~" H 14400 1800 50  0001 C CNN
 	1    14400 1800
 	-1   0    0    -1  
@@ -1634,7 +1451,7 @@ F 3 "~" H 11900 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14150 5000 14450 5000
-Text GLabel 15850 5000 2    50   Output ~ 0
+Text GLabel 16000 5000 2    50   Output ~ 0
 +5V
 $Comp
 L Device:C_Small C8
@@ -1737,13 +1554,11 @@ Wire Wire Line
 	14900 5750 15300 5750
 Wire Wire Line
 	14900 5300 14900 5350
-Wire Wire Line
-	15850 5000 15750 5000
 $Comp
-L Switch:SW_Push SW1
+L Switch:SW_Push SW2
 U 1 1 5F495F4E
 P 12150 4700
-F 0 "SW1" V 12050 5000 50  0000 R CNN
+F 0 "SW2" V 12050 5000 50  0000 R CNN
 F 1 "Power_On" V 12150 5200 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_PTS645" H 12150 4900 50  0001 C CNN
 F 3 "~" H 12150 4900 50  0001 C CNN
@@ -1766,10 +1581,10 @@ Wire Wire Line
 	13650 4550 13650 5750
 Connection ~ 13650 4550
 $Comp
-L Switch:SW_Push SW2
+L Switch:SW_Push SW1
 U 1 1 5F495F5C
 P 11650 5400
-F 0 "SW2" V 11450 5600 50  0000 R CNN
+F 0 "SW1" V 11450 5600 50  0000 R CNN
 F 1 "Power_off" V 11600 5900 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPST_PTS645" H 11650 5600 50  0001 C CNN
 F 3 "~" H 11650 5600 50  0001 C CNN
@@ -1828,7 +1643,7 @@ Wire Wire Line
 	12800 5750 13650 5750
 Connection ~ 12800 5750
 Wire Wire Line
-	12400 5000 12150 5000
+	12400 5000 12300 5000
 Wire Wire Line
 	12400 4150 12600 4150
 Wire Wire Line
@@ -1898,11 +1713,76 @@ Connection ~ 11650 5000
 Wire Wire Line
 	10950 5000 11150 5000
 Wire Wire Line
-	12150 5000 12150 5400
-Text GLabel 4450 6100 2    50   Input ~ 0
+	12300 5000 12300 5400
+Text GLabel 3550 6200 2    50   Input ~ 0
 Monitor
+Connection ~ 12300 5000
 Wire Wire Line
-	4150 5050 4150 4400
+	12300 5000 12150 5000
 Wire Wire Line
-	3450 5050 4150 5050
+	2500 5000 3550 5000
+Wire Wire Line
+	2500 5100 3550 5100
+Wire Wire Line
+	2500 5200 3550 5200
+Wire Wire Line
+	2500 5500 3550 5500
+Wire Wire Line
+	2500 5400 3550 5400
+Wire Wire Line
+	2500 6100 3550 6100
+Wire Wire Line
+	2500 6300 3550 6300
+Wire Wire Line
+	3300 4200 2500 4200
+Wire Wire Line
+	3300 4300 2500 4300
+Text GLabel 3300 4200 2    50   Input ~ 0
+Down
+Wire Wire Line
+	2500 6500 3550 6500
+Wire Wire Line
+	3550 6200 2500 6200
+NoConn ~ 2500 6400
+NoConn ~ 2500 4100
+Wire Wire Line
+	3550 5800 2500 5800
+Wire Wire Line
+	2500 5900 3550 5900
+Wire Wire Line
+	3550 6000 2500 6000
+Wire Wire Line
+	2500 5300 3550 5300
+NoConn ~ 1300 4100
+Wire Wire Line
+	1900 3700 2250 3700
+Wire Wire Line
+	1900 3800 2000 3800
+Wire Wire Line
+	1900 3700 1900 3800
+Connection ~ 1900 3800
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F64FA01
+P 15850 4650
+F 0 "#FLG0101" H 15850 4725 50  0001 C CNN
+F 1 "PWR_FLAG" H 15850 4850 50  0000 C CNN
+F 2 "" H 15850 4650 50  0001 C CNN
+F 3 "~" H 15850 4650 50  0001 C CNN
+	1    15850 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	15850 4650 15850 5000
+Wire Wire Line
+	15750 5000 15850 5000
+Connection ~ 15850 5000
+Wire Wire Line
+	15850 5000 16000 5000
+$Sheet
+S 6900 6750 1500 1750
+U 5F88BDF3
+F0 "Battery Interconnect" 50
+F1 "Batt_wiring.sch" 50
+$EndSheet
 $EndSCHEMATC
