@@ -420,9 +420,9 @@ F 3 "" H 1150 3850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1150 3700 1150 3850
-Text GLabel 3300 4500 2    50   Input ~ 0
+Text GLabel 3300 4500 2    50   BiDi ~ 0
 MOSO
-Text GLabel 3300 4400 2    50   Output ~ 0
+Text GLabel 3300 4400 2    50   BiDi ~ 0
 MOSI
 $Comp
 L Device:C_Small C6
@@ -1085,9 +1085,9 @@ Wire Wire Line
 Wire Wire Line
 	9850 650  9850 900 
 Connection ~ 10150 650 
-Text GLabel 10950 5000 0    50   Input ~ 0
+Text GLabel 11300 6100 0    50   Input ~ 0
 Micro_power_Down
-Text GLabel 3550 6500 2    50   Output ~ 0
+Text GLabel 3550 6200 2    50   Output ~ 0
 Micro_power_Down
 Wire Wire Line
 	4950 5500 4950 5700
@@ -1274,15 +1274,15 @@ Wire Wire Line
 	2850 1350 2800 1350
 Text GLabel 3300 4600 2    50   Input ~ 0
 SCLK
-Text GLabel 12300 5400 0    50   Output ~ 0
+Text GLabel 10950 5000 0    50   Output ~ 0
 Monitor
 Text GLabel 6700 5650 0    50   Output ~ 0
 Down
 Text GLabel 9600 5650 2    50   Output ~ 0
 Up
-Text GLabel 5600 5400 2    50   Output ~ 0
+Text GLabel 4850 5300 0    50   BiDi ~ 0
 MOSO
-Text GLabel 4850 5300 0    50   Output ~ 0
+Text GLabel 5600 5400 2    50   BiDi ~ 0
 MOSI
 Text GLabel 4850 5400 0    50   Input ~ 0
 SCLK
@@ -1600,7 +1600,7 @@ F 3 "~" H 13100 4750 50  0001 C CNN
 	1    13100 4750
 	0    -1   -1   0   
 $EndComp
-Text Notes 11250 6050 0    50   ~ 0
+Text Notes 13400 6450 0    50   ~ 0
 tested over 2 second delay off from full load to no load\n5v reg. set to 5.6v for diode drop.
 Wire Wire Line
 	12400 5000 12400 5250
@@ -1640,8 +1640,6 @@ Wire Wire Line
 Wire Wire Line
 	12800 5750 13650 5750
 Connection ~ 12800 5750
-Wire Wire Line
-	12400 5000 12300 5000
 Wire Wire Line
 	12400 4150 12600 4150
 Wire Wire Line
@@ -1710,13 +1708,8 @@ Wire Wire Line
 Connection ~ 11650 5000
 Wire Wire Line
 	10950 5000 11150 5000
-Wire Wire Line
-	12300 5000 12300 5400
-Text GLabel 3550 6200 2    50   Input ~ 0
+Text GLabel 3550 6500 2    50   Input ~ 0
 Monitor
-Connection ~ 12300 5000
-Wire Wire Line
-	12300 5000 12150 5000
 Wire Wire Line
 	2500 5000 3550 5000
 Wire Wire Line
@@ -1785,4 +1778,47 @@ F1 "Batt_wiring.sch" 50
 $EndSheet
 Wire Wire Line
 	13150 4450 13150 4550
+Wire Wire Line
+	12150 5000 12400 5000
+Wire Wire Line
+	11300 6100 11500 6100
+Wire Wire Line
+	12150 5000 12150 5900
+$Comp
+L Transistor_BJT:MMBT3904 Q7
+U 1 1 5F1B5AF9
+P 12050 6100
+F 0 "Q7" H 12241 6146 50  0000 L CNN
+F 1 "MMBT3904" H 12241 6055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 12250 6025 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 12050 6100 50  0001 L CNN
+	1    12050 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R18
+U 1 1 5F1F10F9
+P 11600 6100
+F 0 "R18" V 11700 6100 50  0000 R CNN
+F 1 "220k" V 11500 6100 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11600 6100 50  0001 C CNN
+F 3 "~" H 11600 6100 50  0001 C CNN
+	1    11600 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11850 6100 11700 6100
+$Comp
+L power:GND #PWR0101
+U 1 1 5F23F3F8
+P 12150 6450
+F 0 "#PWR0101" H 12150 6200 50  0001 C CNN
+F 1 "GND" H 12155 6277 50  0000 C CNN
+F 2 "" H 12150 6450 50  0001 C CNN
+F 3 "" H 12150 6450 50  0001 C CNN
+	1    12150 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12150 6300 12150 6450
 $EndSCHEMATC
