@@ -966,7 +966,7 @@ Wire Wire Line
 	8550 5650 8550 5750
 Wire Wire Line
 	7900 5650 7900 5750
-Text Notes 9450 2250 0    50   ~ 0
+Text Notes 8750 2350 0    50   ~ 0
 Batt Voltage Monitor\nfor 24v the values are 43.2k (R5) and 8.06k (R9) for divide by 5\nfor 20V the values are 33k and 8.2k for divide by 4\nThe input is clamped at 30v Max, over this the fuse will blow
 $Comp
 L Device:D_Zener D3
