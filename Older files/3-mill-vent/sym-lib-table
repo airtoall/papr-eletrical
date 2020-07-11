@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name 1-mill-vent-rescue)(type Legacy)(uri ${KIPRJMOD}/1-mill-vent-rescue.lib)(options "")(descr ""))
+  (lib (name 2-mill-vent-rescue)(type Legacy)(uri ${KIPRJMOD}/2-mill-vent-rescue.lib)(options "")(descr ""))
+  (lib (name 3-mill-vent-rescue)(type Legacy)(uri ${KIPRJMOD}/3-mill-vent-rescue.lib)(options "")(descr ""))
+)
