@@ -437,7 +437,7 @@ $Comp
 L Device:Crystal_Small Y1
 U 1 1 5F8CFD3F
 P 2700 4750
-F 0 "Y1" V 2700 4850 50  0000 L CNN
+F 0 "Y1" V 2700 4600 50  0000 L CNN
 F 1 "16.000MHZ" V 2650 5250 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_0603-2Pin_6.0x3.5mm" H 2700 4750 50  0001 C CNN
 F 3 "~" H 2700 4750 50  0001 C CNN
@@ -536,7 +536,7 @@ Wire Wire Line
 	3300 4400 2500 4400
 Text GLabel 3550 6000 2    50   Output ~ 0
 Motor
-Text GLabel 3550 5900 2    50   Input ~ 0
+Text GLabel 3300 4300 2    50   Input ~ 0
 Alarm
 Text GLabel 1100 4400 0    50   Input ~ 0
 Batt_V
@@ -1237,7 +1237,7 @@ F 3 "~" H 14150 2100 50  0001 C CNN
 	1    14150 2100
 	-1   0    0    -1  
 $EndComp
-Text GLabel 3300 4300 2    50   Input ~ 0
+Text GLabel 3550 5900 2    50   Input ~ 0
 Up
 $Comp
 L Connector:Conn_01x03_Male J2
@@ -1753,29 +1753,6 @@ Wire Wire Line
 	12000 7400 12000 7550
 Text Notes 1150 9700 0    50   ~ 0
 Micro_Power_Down is active High output from the Micro.\nLatching this line low will power down the unit.\n\nUp is active low input to the Micro.\nWhen low this signals the Micro the Up button is depressed.\nUp is debounced in hardware.\nDo Not USE Int Pull Up.\n\nDown is active low input to the Micro.\nWhen low this signals the Micro the Down button is depressed.\nUp is debounced in hardware.\nDo Not USE Int Pull Up.\n\nRPM is an input to the Micro.\nWhen active, is a frequency directly related to fan speed\nthis should drive a counter.\nUp is debounced in hardware.\nDo Not USE Int Pull Up.\n\nMonitor is an input to the Micro.\nIt is active low and signals the micro that the power down button is being pushed.\nA diode is used to isolate the micro fron positive voltages.\nAs a result of this a PULL UP must be used on this input.
-$Comp
-L Device:R_Small_US R4
-U 1 1 5F2E620F
-P 1200 900
-F 0 "R4" H 1150 900 50  0000 R CNN
-F 1 "10k" H 1400 900 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1200 900 50  0001 C CNN
-F 3 "~" H 1200 900 50  0001 C CNN
-	1    1200 900 
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1050 1350 1200 1350
-Wire Wire Line
-	1200 1350 1200 1000
-Connection ~ 1200 1350
-Wire Wire Line
-	1200 1350 1250 1350
-Wire Wire Line
-	1200 800  1200 650 
-Wire Wire Line
-	1200 650  1800 650 
-Connection ~ 1800 650 
 Wire Wire Line
 	8550 5650 8950 5650
 $Comp
@@ -1885,4 +1862,6 @@ F 3 "~" H 7550 1100 50  0001 C CNN
 	1    7550 1100
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	1050 1350 1250 1350
 $EndSCHEMATC
