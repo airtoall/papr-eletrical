@@ -920,8 +920,6 @@ Wire Wire Line
 Wire Wire Line
 	7150 650  7150 900 
 Connection ~ 7450 650 
-Text GLabel 3550 6200 2    50   Output ~ 0
-Micro_power_Down
 Wire Wire Line
 	5100 5500 5100 5700
 Connection ~ 5100 5500
@@ -1486,8 +1484,6 @@ Text GLabel 3300 4200 2    50   Input ~ 0
 Down
 Wire Wire Line
 	2500 6500 3550 6500
-Wire Wire Line
-	3550 6200 2500 6200
 NoConn ~ 2500 6400
 NoConn ~ 2500 4100
 Wire Wire Line
@@ -1719,4 +1715,5 @@ Wire Wire Line
 	2500 6100 2850 6100
 Wire Wire Line
 	3050 6100 3550 6100
+NoConn ~ 2500 6200
 $EndSCHEMATC
