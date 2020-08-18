@@ -53,9 +53,7 @@ PORTD = B10000000;
   
   // Setup the LED pins as outputs and turn the LEDs off
   PORTC = B00111111;
-
-  digitalWrite(MODE_LED_2_PIN, HIGH);
-  digitalWrite(MODE_LED_3_PIN, HIGH);
+  PORTD = B10000001;
 
   // Buzzer
   analogWrite(BUZZER_PIN, 0);
