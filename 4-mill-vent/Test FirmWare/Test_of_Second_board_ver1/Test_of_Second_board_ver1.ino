@@ -55,7 +55,7 @@ PORTD = B10000000;
   PORTC = B00111111;
   PORTD = B10000001;
 
-  // Buzzer
+  // Buzzer 
   analogWrite(BUZZER_PIN, 0);
   
   // Vibrator
@@ -146,17 +146,9 @@ void loop() {
   PORTC = B00111111;
   PORTD = B10000001;
 
-
   while(true) {
-
-
-    Fan_Up_Value = digitalRead(FAN_UP_PIN);
-    digitalWrite(MODE_LED_3_PIN, Fan_Up_Value);
-
-    Fan_Down_Value = digitalRead(FAN_DOWN_PIN);
-    digitalWrite(MODE_LED_1_PIN, Fan_Down_Value);
-
-    Monitor_PIN_Value = digitalRead(Monitor_PIN);
-    digitalWrite(BATTERY_LED_1_PIN, Monitor_PIN_Value);
-            }
+    digitalWrite(MODE_LED_3_PIN, digitalRead(FAN_UP_PIN));
+    digitalWrite(MODE_LED_1_PIN, digitalRead(FAN_DOWN_PIN));
+    digitalWrite(BATTERY_LED_1_PIN, digitalRead(Monitor_PIN));
+           }
 }
