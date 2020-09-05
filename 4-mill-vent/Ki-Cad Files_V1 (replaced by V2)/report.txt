@@ -1,0 +1,22 @@
+Annotated Battery_Cell as BT4
+Annotated LM317_TO-220 as U5
+Annotated 1.2 10w as R2
+Annotated Fan_4pin as M1
+Annotated Charger_Plug as J15
+Annotated Charger_Plug as J14
+Annotated Buzzer as BZ1
+Annotated Battery_Cell as BT14
+Annotated Battery_Cell as BT13
+Annotated Battery_Cell as BT12
+Annotated Battery_Cell as BT11
+Annotated Battery_Cell as BT10
+Annotated Battery_Cell as BT9
+Annotated Battery_Cell as BT8
+Annotated Battery_Cell as BT7
+Annotated Battery_Cell as BT6
+Annotated Battery_Cell as BT5
+Annotated Battery_Cell as BT3
+Error: Multiple item J6 (unit 1)
+
+Error: Multiple item J8 (unit 1)
+

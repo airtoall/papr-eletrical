@@ -52,8 +52,8 @@ PORTD = B10000000;
   analogWrite(FAN_PWM_PIN, 0);
   
   // Setup the LED pins as outputs and turn the LEDs off
-  PORTC = B00111111;
-  PORTD = B10000001;
+  PORTC = 0x3f;
+  PORTD = 0x81;
 
   // Buzzer 
   analogWrite(BUZZER_PIN, 0);
@@ -65,22 +65,22 @@ PORTD = B10000000;
 void loop() {
 
   // Strobe LED
-  PORTC = B00111110;
+  PORTC = 0x3E;
   delay(DELAY_100ms);
-  PORTC = B00111101;
+  PORTC = 0x3D;
   delay(DELAY_100ms);
-  PORTC = B00111011;
+  PORTC = 0x3B;
   delay(DELAY_100ms);
-  PORTC = B00110111;
+  PORTC = 0x37;
   delay(DELAY_100ms);
-  PORTC = B00101111;
+  PORTC = 0x02F;
   delay(DELAY_100ms);
-  PORTC = B00011111;
+  PORTC = 0x1F;
   delay(DELAY_100ms);
-  PORTC = B00111111;
-  PORTD = B00000000;
+  PORTC = 0x3F;
+  PORTD = 0x00;
   delay(DELAY_100ms);
-  PORTD = B00000001;
+  PORTD =0x01;
   delay(DELAY_100ms);
 
   // Buzzer
@@ -108,43 +108,43 @@ void loop() {
   */
   // FAN LOW
   analogWrite(FAN_PWM_PIN, s_fan_pwm_low);
-  PORTC = B00101111;
-  PORTD = B10000001;  
+  PORTC = 0x2F;
+  PORTD = 0x81;  
   delay(DELAY_1SEC/4);
 
 
    // FAN MID_LOW
   analogWrite(FAN_PWM_PIN, s_fan_pwm_mid_low);
-  PORTC = B00001111;
-  PORTD = B10000001;
+  PORTC = 0x0F;
+  PORTD = 0x81;
   
   delay(DELAY_1SEC/4);
 
   
   // FAN MED
   analogWrite(FAN_PWM_PIN, s_fan_pwm_mid);
-  PORTC = B00011111;
-  PORTD = B10000001;
+  PORTC = 0x1F;
+  PORTD = 0x81;
   delay(DELAY_1SEC/4);
 
     
   // FAN MED_HIGH
   analogWrite(FAN_PWM_PIN, s_fan_pwm_mid_hi);
-  PORTC = B00011111;
-  PORTD = B10000000;
+  PORTC = 0x1F;
+  PORTD = 0x80;
   delay(DELAY_1SEC/4);
   
   
   // FAN HIGH
   analogWrite(FAN_PWM_PIN, s_fan_pwm_hi);
-  PORTC = B00001111;
-  PORTD = B10000000;
+  PORTC = 0x0F;
+  PORTD = 0x80;
   delay(DELAY_1SEC/4);
 
   // FAN OFF
   analogWrite(FAN_PWM_PIN, s_fan_pwm_off);
-  PORTC = B00111111;
-  PORTD = B10000001;
+  PORTC = 0x3F;
+  PORTD = 0x81;
 
   while(true) {
     digitalWrite(MODE_LED_3_PIN, digitalRead(FAN_UP_PIN));

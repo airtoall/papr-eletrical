@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 2
 Title ""
 Date ""
 Rev ""
@@ -39,12 +39,6 @@ F 3 "~" H 6050 1500 50  0001 C CNN
 	1    6050 1500
 	-1   0    0    1   
 $EndComp
-$Sheet
-S 3050 5350 2600 1650
-U 5F1CA46A
-F0 "batter pack" 50
-F1 "file5F1CA469.sch" 50
-$EndSheet
 $Comp
 L Motor:Fan_4pin M1
 U 1 1 5F20EF18

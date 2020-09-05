@@ -243,10 +243,10 @@ F0 "batter pack" 50
 F1 "file5F1CA469.sch" 50
 $EndSheet
 $Comp
-L Motor:Fan_4pin M?
+L Motor:Fan_4pin M1
 U 1 1 5F20EF18
 P 4950 1450
-F 0 "M?" H 5108 1546 50  0000 L CNN
+F 0 "M1" H 5108 1546 50  0000 L CNN
 F 1 "Fan_4pin" H 5108 1455 50  0000 L CNN
 F 2 "" H 4950 1460 50  0001 C CNN
 F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4950 1460 50  0001 C CNN
@@ -268,10 +268,10 @@ Wire Wire Line
 Wire Wire Line
 	3350 1500 4200 1500
 $Comp
-L Device:Buzzer BZ?
+L Device:Buzzer BZ1
 U 1 1 5F214FCB
 P 6650 1500
-F 0 "BZ?" H 6654 1175 50  0000 C CNN
+F 0 "BZ1" H 6654 1175 50  0000 C CNN
 F 1 "Buzzer" H 6654 1266 50  0000 C CNN
 F 2 "" V 6625 1600 50  0001 C CNN
 F 3 "~" V 6625 1600 50  0001 C CNN

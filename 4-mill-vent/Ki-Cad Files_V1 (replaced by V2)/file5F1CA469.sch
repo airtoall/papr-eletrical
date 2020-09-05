@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT3
 U 1 1 5F1CA824
 P 1050 2200
-F 0 "BT?" H 1168 2296 50  0000 L CNN
+F 0 "BT3" H 1168 2296 50  0000 L CNN
 F 1 "Battery_Cell" H 1168 2205 50  0000 L CNN
 F 2 "" V 1050 2260 50  0001 C CNN
 F 3 "~" V 1050 2260 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "~" V 1050 2260 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT5
 U 1 1 5F1CB129
 P 1050 2800
-F 0 "BT?" H 1168 2896 50  0000 L CNN
+F 0 "BT5" H 1168 2896 50  0000 L CNN
 F 1 "Battery_Cell" H 1168 2805 50  0000 L CNN
 F 2 "" V 1050 2860 50  0001 C CNN
 F 3 "~" V 1050 2860 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "~" V 1050 2860 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT7
 U 1 1 5F1CBE25
 P 1050 3400
-F 0 "BT?" H 1168 3496 50  0000 L CNN
+F 0 "BT7" H 1168 3496 50  0000 L CNN
 F 1 "Battery_Cell" H 1168 3405 50  0000 L CNN
 F 2 "" V 1050 3460 50  0001 C CNN
 F 3 "~" V 1050 3460 50  0001 C CNN
@@ -47,10 +47,10 @@ F 3 "~" V 1050 3460 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT9
 U 1 1 5F1CEC7A
 P 1050 4050
-F 0 "BT?" H 1168 4146 50  0000 L CNN
+F 0 "BT9" H 1168 4146 50  0000 L CNN
 F 1 "Battery_Cell" H 1168 4055 50  0000 L CNN
 F 2 "" V 1050 4110 50  0001 C CNN
 F 3 "~" V 1050 4110 50  0001 C CNN
@@ -58,10 +58,10 @@ F 3 "~" V 1050 4110 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT11
 U 1 1 5F1CEC80
 P 1050 4650
-F 0 "BT?" H 1168 4746 50  0000 L CNN
+F 0 "BT11" H 1168 4746 50  0000 L CNN
 F 1 "Battery_Cell" H 1168 4655 50  0000 L CNN
 F 2 "" V 1050 4710 50  0001 C CNN
 F 3 "~" V 1050 4710 50  0001 C CNN
@@ -69,10 +69,10 @@ F 3 "~" V 1050 4710 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT13
 U 1 1 5F1CEC86
 P 1050 5200
-F 0 "BT?" H 1168 5296 50  0000 L CNN
+F 0 "BT13" H 1168 5296 50  0000 L CNN
 F 1 "Battery_Cell" H 1168 5205 50  0000 L CNN
 F 2 "" V 1050 5260 50  0001 C CNN
 F 3 "~" V 1050 5260 50  0001 C CNN
@@ -80,10 +80,10 @@ F 3 "~" V 1050 5260 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT4
 U 1 1 5F1D904E
 P 2350 2200
-F 0 "BT?" H 2468 2296 50  0000 L CNN
+F 0 "BT4" H 2468 2296 50  0000 L CNN
 F 1 "Battery_Cell" H 2468 2205 50  0000 L CNN
 F 2 "" V 2350 2260 50  0001 C CNN
 F 3 "~" V 2350 2260 50  0001 C CNN
@@ -91,10 +91,10 @@ F 3 "~" V 2350 2260 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT6
 U 1 1 5F1D9054
 P 2350 2800
-F 0 "BT?" H 2468 2896 50  0000 L CNN
+F 0 "BT6" H 2468 2896 50  0000 L CNN
 F 1 "Battery_Cell" H 2468 2805 50  0000 L CNN
 F 2 "" V 2350 2860 50  0001 C CNN
 F 3 "~" V 2350 2860 50  0001 C CNN
@@ -102,10 +102,10 @@ F 3 "~" V 2350 2860 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT8
 U 1 1 5F1D905A
 P 2350 3400
-F 0 "BT?" H 2468 3496 50  0000 L CNN
+F 0 "BT8" H 2468 3496 50  0000 L CNN
 F 1 "Battery_Cell" H 2468 3405 50  0000 L CNN
 F 2 "" V 2350 3460 50  0001 C CNN
 F 3 "~" V 2350 3460 50  0001 C CNN
@@ -113,10 +113,10 @@ F 3 "~" V 2350 3460 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT10
 U 1 1 5F1D9060
 P 2350 4050
-F 0 "BT?" H 2468 4146 50  0000 L CNN
+F 0 "BT10" H 2468 4146 50  0000 L CNN
 F 1 "Battery_Cell" H 2468 4055 50  0000 L CNN
 F 2 "" V 2350 4110 50  0001 C CNN
 F 3 "~" V 2350 4110 50  0001 C CNN
@@ -124,10 +124,10 @@ F 3 "~" V 2350 4110 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT12
 U 1 1 5F1D9066
 P 2350 4650
-F 0 "BT?" H 2468 4746 50  0000 L CNN
+F 0 "BT12" H 2468 4746 50  0000 L CNN
 F 1 "Battery_Cell" H 2468 4655 50  0000 L CNN
 F 2 "" V 2350 4710 50  0001 C CNN
 F 3 "~" V 2350 4710 50  0001 C CNN
@@ -135,10 +135,10 @@ F 3 "~" V 2350 4710 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT14
 U 1 1 5F1D906C
 P 2350 5200
-F 0 "BT?" H 2468 5296 50  0000 L CNN
+F 0 "BT14" H 2468 5296 50  0000 L CNN
 F 1 "Battery_Cell" H 2468 5205 50  0000 L CNN
 F 2 "" V 2350 5260 50  0001 C CNN
 F 3 "~" V 2350 5260 50  0001 C CNN
@@ -258,10 +258,10 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	4000 2900 4550 2900
 $Comp
-L Connector:Conn_01x03_Female J6
+L Connector:Conn_01x03_Female J36
 U 1 1 5F1EDD5E
 P 5850 3650
-F 0 "J6" H 5878 3676 50  0000 L CNN
+F 0 "J36" H 5878 3676 50  0000 L CNN
 F 1 "Charger_Port" H 5878 3585 50  0000 L CNN
 F 2 "" H 5850 3650 50  0001 C CNN
 F 3 "~" H 5850 3650 50  0001 C CNN
@@ -285,10 +285,10 @@ Wire Wire Line
 Wire Wire Line
 	5350 4150 5650 4150
 $Comp
-L Connector:Conn_01x02_Male J8
+L Connector:Conn_01x02_Male J38
 U 1 1 5F1F487A
 P 5850 4050
-F 0 "J8" H 5822 4024 50  0000 R CNN
+F 0 "J38" H 5822 4024 50  0000 R CNN
 F 1 "Board_Power" H 5822 3933 50  0000 R CNN
 F 2 "" H 5850 4050 50  0001 C CNN
 F 3 "~" H 5850 4050 50  0001 C CNN
@@ -325,10 +325,10 @@ Sense5
 Text Notes 4450 3700 2    50   ~ 0
 Charge\nController
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J34
 U 1 1 5F290A6E
 P 6650 3650
-F 0 "J?" H 6758 3931 50  0000 C CNN
+F 0 "J34" H 6758 3931 50  0000 C CNN
 F 1 "Charger_Plug" H 6758 3840 50  0000 C CNN
 F 2 "" H 6650 3650 50  0001 C CNN
 F 3 "~" H 6650 3650 50  0001 C CNN

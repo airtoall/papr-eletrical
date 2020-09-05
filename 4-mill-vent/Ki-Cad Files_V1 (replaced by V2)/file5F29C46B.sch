@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Regulator_Linear:LM317_TO-220 U?
+L Regulator_Linear:LM317_TO-220 U5
 U 1 1 5F29C9F9
 P 5450 2800
-F 0 "U?" H 5450 3042 50  0000 C CNN
+F 0 "U5" H 5450 3042 50  0000 C CNN
 F 1 "LM317_TO-220" H 5450 2951 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5450 3050 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 5450 2800 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 5450 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 5F29D1A4
 P 5950 3100
-F 0 "R?" H 6020 3146 50  0000 L CNN
+F 0 "R2" H 6020 3146 50  0000 L CNN
 F 1 "1.2 10w" H 6020 3055 50  0000 L CNN
 F 2 "" V 5880 3100 50  0001 C CNN
 F 3 "~" H 5950 3100 50  0001 C CNN
@@ -71,10 +71,10 @@ Wire Wire Line
 Wire Wire Line
 	4100 3300 4100 3650
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J45
 U 1 1 5F2A1A8B
 P 7500 3500
-F 0 "J?" H 7608 3781 50  0000 C CNN
+F 0 "J45" H 7608 3781 50  0000 C CNN
 F 1 "Charger_Plug" H 7608 3690 50  0000 C CNN
 F 2 "" H 7500 3500 50  0001 C CNN
 F 3 "~" H 7500 3500 50  0001 C CNN

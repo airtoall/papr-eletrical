@@ -338,35 +338,14 @@ F 3 "~" H 2950 4850 50  0001 C CNN
 	1    2950 4850
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:Crystal_Small Y1
-U 1 1 5F8CFD3F
-P 2700 4750
-F 0 "Y1" V 2700 4600 50  0000 L CNN
-F 1 "16.000MHZ" V 2650 5250 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_0603-2Pin_6.0x3.5mm" H 2700 4750 50  0001 C CNN
-F 3 "~" H 2700 4750 50  0001 C CNN
-	1    2700 4750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2500 4700 2600 4700
 Wire Wire Line
 	2600 4700 2600 4650
 Wire Wire Line
-	2600 4650 2700 4650
-Connection ~ 2700 4650
-Wire Wire Line
-	2700 4650 2850 4650
-Wire Wire Line
 	2500 4800 2600 4800
 Wire Wire Line
 	2600 4800 2600 4850
-Wire Wire Line
-	2600 4850 2700 4850
-Connection ~ 2700 4850
-Wire Wire Line
-	2700 4850 2850 4850
 Wire Wire Line
 	3050 4650 3150 4650
 Wire Wire Line
@@ -882,7 +861,7 @@ L Device:C_Small C8
 U 1 1 5F88A207
 P 2950 4650
 F 0 "C8" V 2900 4500 50  0000 L CNN
-F 1 "1206Y0160180FFT" V 3050 4350 50  0000 L CNN
+F 1 "1206Y0160180FFT" V 3600 3500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 2950 4650 50  0001 C CNN
 F 3 "~" H 2950 4650 50  0001 C CNN
 	1    2950 4650
@@ -1716,4 +1695,30 @@ Wire Wire Line
 Wire Wire Line
 	3050 6100 3550 6100
 NoConn ~ 2500 6200
+$Comp
+L Device:Crystal_GND23_Small Y1
+U 1 1 5F56AB26
+P 2750 4750
+F 0 "Y1" V 2750 4850 50  0000 L CNN
+F 1 "Crystal_16MHZ" V 2950 4450 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_0603-4Pin_6.0x3.5mm" H 2750 4750 50  0001 C CNN
+F 3 "~" H 2750 4750 50  0001 C CNN
+	1    2750 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 4650 2750 4650
+Wire Wire Line
+	2600 4850 2750 4850
+Connection ~ 2750 4650
+Wire Wire Line
+	2750 4650 2850 4650
+Connection ~ 2750 4850
+Wire Wire Line
+	2750 4850 2850 4850
+Wire Wire Line
+	2650 4750 2850 4750
+Wire Wire Line
+	2850 4750 3150 4750
+Connection ~ 2850 4750
 $EndSCHEMATC
